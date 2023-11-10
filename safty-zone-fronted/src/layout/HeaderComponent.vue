@@ -7,7 +7,7 @@
     <div class="col-2">
       <h3>Источники</h3>
     </div>
-    <div class="col-2">
+    <div class="col-2 text-left">
       <h3>База данных</h3>
     </div>
     <div class="col-6"></div>
