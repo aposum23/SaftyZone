@@ -32,7 +32,7 @@ const incidents = [
       </div>
     </template>
     <div>
-      <p class="text-left ">Добавить источник</p>
+      <p class="text-left sidebar__source-add">Добавить источник</p>
     </div>
   </div>
 </template>
@@ -40,7 +40,6 @@ const incidents = [
 <style scoped lang="scss">
   .sidebar {
     margin-top: .5rem;
-    width: 15vw;
     height: 100%;
     padding-left: 4rem;
     padding-right: 3rem;
@@ -74,5 +73,14 @@ const incidents = [
 
   .marker-3 {
     background:red;
+  }
+
+  .sidebar__source-add {
+    width: fit-content;
+  }
+
+  .sidebar__source-add:hover {
+    color: var(--border-color-hover);
+    cursor: pointer;
   }
 </style>

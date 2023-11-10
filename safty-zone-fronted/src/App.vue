@@ -1,5 +1,10 @@
 <script setup lang="ts">
 import AppContainer from "./layout/AppContainer.vue";
+import {onMounted} from "vue";
+
+onMounted(() => {
+
+})
 </script>
 
 <template>
@@ -15,6 +20,6 @@ import AppContainer from "./layout/AppContainer.vue";
     width: 100vw;
     max-width: 100vw;
     height: 100vh;
-    overflow-y: hidden;
+    overflow: hidden;
   }
 </style>
