@@ -9,7 +9,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@vitejs/plugin-vue-jsx": "^3.0.2",
+    "material-icons": "^1.13.12",
     "pinia": "^2.1.7",
+    "primeflex": "^3.3.1",
+    "primeicons": "^6.0.1",
+    "primevue": "^3.40.1",
+    "vite-plugin-mkcert": "^1.16.0",
+    "vite-svg-loader": "^4.0.0",
     "vue": "^3.3.4"
   },
   "devDependencies": {

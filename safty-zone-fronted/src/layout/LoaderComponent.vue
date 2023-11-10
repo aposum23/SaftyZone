@@ -1,12 +1,9 @@
 <script setup lang="ts">
 
-import HeaderComponent from "./HeaderComponent.vue";
 </script>
 
 <template>
-  <div>
-    <HeaderComponent />
-  </div>
+<div></div>
 </template>
 
 <style scoped lang="scss">
