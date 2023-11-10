@@ -1,0 +1,44 @@
+{
+  "name": "SaftyZone new generation",
+  "short_name": "SaftyZone",
+  "theme_color": "#35424D",
+  "background_color": "#2196f3",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "screenshots": [{
+    "src": "./src/assets/images/logos/logo-512-512.png",
+    "sizes": "512x512",
+    "platform": "windows",
+    "form_factor": "wide",
+    "label": "ПроСистем приложение"
+  }],
+
+  "icons": [
+    {
+      "src": "",
+      "sizes": "47x47",
+      "type": "image/png"
+    },
+    {
+      "src": "",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
