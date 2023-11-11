@@ -1,34 +1,17 @@
 <script setup lang="ts">
-const incidents = [
-  {
-    level: 0,
-    sourceName: 'Название источника'
-  },
-  {
-    level: 1,
-    sourceName: 'Название источника'
-  },
-  {
-    level: 3,
-    sourceName: 'Название источника'
-  },
-  {
-    level: 2,
-    sourceName: 'Название источника'
-  },
-  {
-    level: 1,
-    sourceName: 'Название источника'
-  },
-];
+import {useIndicatorsStatusStore} from "../stores/indicatorsStatus.ts";
+import {storeToRefs} from "pinia";
+
+const indicatorsStatusStore = useIndicatorsStatusStore();
+const { incidentData } = storeToRefs(indicatorsStatusStore);
 </script>
 
 <template>
   <div class="sidebar">
-    <template v-for="incident in incidents">
+    <template v-for="incident in incidentData">
       <div class="grid sidebar__source">
-        <div :class="`marker marker-${incident.level}`"></div>
-        <p>{{incident.sourceName}}</p>
+        <div :class="`marker marker-${incident.incidentLevel}`"></div>
+        <p><a :href="`#${incident.name}`">{{incident.name}}</a></p>
       </div>
     </template>
     <div>
@@ -44,6 +27,17 @@ const incidents = [
     padding-left: 4rem;
     padding-right: 3rem;
     background: var(--mid-gray);
+    overflow: scroll;
+  }
+
+  .sidebar::-webkit-scrollbar {
+    background: transparent;
+    width: .5rem;
+  }
+
+  .sidebar::-webkit-scrollbar-thumb {
+    background: var(--light-grey);
+    border-radius: 10px;
   }
 
   .sidebar__source {
@@ -82,5 +76,9 @@ const incidents = [
   .sidebar__source-add:hover {
     color: var(--border-color-hover);
     cursor: pointer;
+  }
+
+  a {
+    color: white;
   }
 </style>

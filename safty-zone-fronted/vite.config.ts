@@ -24,7 +24,7 @@ export default defineConfig({
         },
         host: '0.0.0.0',
         port: 9100,
-        https: true
+        https: false
     },
     build: {
         minify: true,

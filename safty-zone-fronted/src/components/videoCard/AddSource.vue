@@ -16,6 +16,7 @@
     height: 10rem;
     width: 30rem;
     line-height: 6rem;
+    background: rgba(53, 66, 77, 0.20);
   }
 
   .add-source:hover {

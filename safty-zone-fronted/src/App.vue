@@ -1,10 +1,5 @@
 <script setup lang="ts">
 import AppContainer from "./layout/AppContainer.vue";
-import {onMounted} from "vue";
-
-onMounted(() => {
-
-})
 </script>
 
 <template>
