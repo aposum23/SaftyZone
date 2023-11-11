@@ -3,8 +3,8 @@
 Для того чтобы запустить данный проект необходимо:
 <ol>
   <li>Клонировать данный репозиторий к себе на персональный компьютер</li>
-  <li>Запустить <a href="https://github.com/aposum23/SaftyZone/blob/main/backend/READ.md">API сервис</a></li>
-  <li>Запустить <a href="https://github.com/aposum23/SaftyZone/tree/main/safty-zone-fronted#readme">пользовательский интерфейс</a></li>
+  <li>Запустить <a href="https://github.com/aposum23/SaftyZone/tree/main/backend">API сервис</a></li>
+  <li>Запустить <a href="https://github.com/aposum23/SaftyZone/tree/main/safty-zone-fronted">пользовательский интерфейс</a></li>
   <li>Открыть приложение по одной из ссылок, указанных в консоли запуска пользовательского интерфейса</li>
 </ol>
 
@@ -16,8 +16,8 @@
 <h3><a href="https://t.me/haxf1">Шальнев Владимир</a></h3>
 <h4>backend developer</h4>
 <img width="221" height="130" src="https://pchel.net/files/users/ekaterina-svetikova-8960888864000/avatars/medium/5226061_foto.png"/>
-<h3><a href="https://t.me/MishaDuhno">Екатерина Светикова</a></h3>
+<h3><a href="https://t.me/esvetikova">Екатерина Светикова</a></h3>
 <h4>UI/UX Designer</h4>
 <img width="221" height="130" src=https://github.com/aposum23/SaftyZone/assets/81620056/5bd17d5a-f373-4937-9fa6-ace9e9b8c0f3"/>
-<h3><a href="https://t.me/MishaDuhno">Алексей Брагин</a></h3>
+<h3><a href="https://t.me/ab2805">Алексей Брагин</a></h3>
 <h4>Инженер машинного зрения</h4>
