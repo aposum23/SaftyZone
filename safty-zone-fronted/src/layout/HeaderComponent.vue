@@ -4,6 +4,10 @@ import {storeToRefs} from "pinia";
 import EmptyNotif from '../assets/images/empty-notification.svg';
 import FullNotif from '../assets/images/full-notification.svg';
 
+const emit = defineEmits<{
+  "changePage": [string]
+}>();
+
 const indicatorsStatusStore = useIndicatorsStatusStore();
 const { generateAlarm } = storeToRefs(indicatorsStatusStore);
 </script>
@@ -11,10 +15,10 @@ const { generateAlarm } = storeToRefs(indicatorsStatusStore);
 <template>
   <div class="grid w-full h-5rem m-0 header">
     <div class="col-2">
-      <h3>Источники</h3>
+      <h3 @click="emit('changePage', 'cards')" class="cursor-pointer">Источники</h3>
     </div>
     <div class="col-2 text-left">
-      <h3>База данных</h3>
+      <h3 @click="emit('changePage', 'data-base')" class="cursor-pointer">База данных</h3>
     </div>
     <div class="col-6"></div>
     <div class="col-2 header__notification">

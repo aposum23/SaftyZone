@@ -17,4 +17,11 @@ import AppContainer from "./layout/AppContainer.vue";
     height: 100vh;
     overflow: hidden;
   }
+
+  .p-dialog-header-icon {
+    background-color: transparent !important;
+    border-radius: 90px;
+    width: 1rem;
+    height: 2.5rem;
+  }
 </style>

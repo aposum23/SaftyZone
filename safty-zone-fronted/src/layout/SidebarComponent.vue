@@ -58,14 +58,6 @@ const { incidentData } = storeToRefs(indicatorsStatusStore);
   }
 
   .marker-1 {
-    background:yellow;
-  }
-
-  .marker-2 {
-    background:orange;
-  }
-
-  .marker-3 {
     background:red;
   }
 

@@ -5,6 +5,7 @@ import './style.css';
 import App from './App.vue';
 
 import '@/assets/styles.scss';
+import 'primevue/resources/themes/lara-dark-blue/theme.css'
 
 const pinia = createPinia();
 const app = createApp(App);

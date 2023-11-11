@@ -75,20 +75,6 @@ const messageVariants = [
   }
 
   .card__status-1 {
-    border: 2px solid #646400;
-    background: #979701;
-    border-radius: 10px;
-    color: white;
-  }
-
-  .card__status-2 {
-    border: 2px solid #946001;
-    background: orange;
-    border-radius: 10px;
-    color: white;
-  }
-
-  .card__status-3 {
     border: 2px solid #ae0000;
     background: red;
     border-radius: 10px;
@@ -126,14 +112,6 @@ const messageVariants = [
   }
 
   .card__indicator-1 {
-    background: yellow;
-  }
-
-  .card__indicator-2 {
-    background: orange;
-  }
-
-  .card__indicator-3 {
     background: red;
   }
 </style>

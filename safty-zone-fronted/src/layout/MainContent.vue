@@ -6,7 +6,9 @@ import {onMounted, ref} from "vue";
 import {getApiUrl} from "../utils/getEnvData.ts";
 import {useIndicatorsStatusStore} from "../stores/indicatorsStatus.ts";
 import {storeToRefs} from "pinia";
-import MaskSettings from "../components/videoCard/MaskSettings.vue";
+import ZoneSelection from "../components/Dialogs/ZoneSelection.vue";
+import IncidentReaction from "../components/Dialogs/IncidentReaction.vue";
+import AddSourceDialog from "../components/Dialogs/AddSourceDialog.vue";
 
 const sources = ref<{[k: string]: any}>([]);
 const indicatorsStatusStore = useIndicatorsStatusStore();
@@ -34,6 +36,8 @@ onMounted(() => {
       if (value.incidentLevel === 1) {
         generateAlarm.value = true;
         showNotifBar.value = true;
+        currentVideo.value = value.file;
+        currentContent.value = 'incident';
         alarmSource.value = value.name;
         break;
       }
@@ -46,16 +50,27 @@ onMounted(() => {
 
 <template>
   <div class="content grid justify-content-center">
-    <NotificationBar v-if="generateAlarm && showNotifBar" :source-name="alarmSource" class="col-11 mt-1" @closeNotificationBar="showNotifBar = false"/>
-    <template v-if="currentContent === 'cards'">
-      <template v-for="source in sources">
-        <VideoCard :id="source.name" :sourceName="source.name" :fileName="source.file" :incidentLevel="source.incidentLevel" class="col-6 mx-5 my-3" @openMaskSettings="openMaskSettings(source.file)"/>
-      </template>
+  <NotificationBar v-if="generateAlarm && showNotifBar" :source-name="alarmSource" class="col-11 mt-1" @closeNotificationBar="showNotifBar = false"/>
+    <template v-for="source in sources">
+      <VideoCard :id="source.name" :sourceName="source.name" :fileName="source.file" :incidentLevel="source.incidentLevel" class="col-6 mx-5 my-3" @openMaskSettings="openMaskSettings(source.file)"/>
+    </template>
+    <div @click="currentContent = 'add-source'">
       <AddSource class="col-6 mx-5 my-3"/>
-    </template>
-    <template v-else-if="currentContent === 'maskSettings'">
-      <MaskSettings :current-video="currentVideo" class="col-12"/>
-    </template>
+    </div>
+    <ZoneSelection
+        v-if="currentContent === 'maskSettings'"
+        :current-video="currentVideo"
+        @closeDialog="currentContent = ''"
+    />
+    <IncidentReaction
+        v-else-if="currentContent === 'incident'"
+        :current-video="currentVideo"
+        @closeDialog="currentContent = ''"
+    />
+    <AddSourceDialog
+        v-else-if="currentContent === 'add-source'"
+        @closeDialog="currentContent = ''"
+    />
   </div>
 </template>
 
