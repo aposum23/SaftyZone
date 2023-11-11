@@ -9,7 +9,10 @@
    <li>npm run dev - запустить версию для разработки</li>
 </ol>
 
-<h1>Работу выполнил</h1>
+<h1>Над проектом работали</h1>
 <img width="100px" height="130px" src="https://sun9-8.userapi.com/impg/uVBJcYqJBL2PRGX4TpvMCzjAt8_IBQQD0UQQ9Q/smN67kVVTCQ.jpg?size=480x640&quality=95&sign=1943f5daa820d6f0beb0e1671c07dced&type=album"/>
 <h3><a href="https://t.me/MishaDuhno">Духно Михаил</a></h3>
 <h4>Junior frontend developer</h4>
+<img width="221" height="130" src="https://pchel.net/files/users/ekaterina-svetikova-8960888864000/avatars/medium/5226061_foto.png"/>
+<h3><a href="https://t.me/esvetikova">Екатерина Светикова</a></h3>
+<h4>UI/UX Designer</h4>
