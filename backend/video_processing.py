@@ -14,8 +14,9 @@ def get_mask_by_filename(file_name: str):
     data = read_db()
     frame_data = data.get(file_name)
     if frame_data is not None:
-        mask = np.array(frame_data.get('mask'))
-        return mask
+        masks = frame_data.get('mask')
+
+        return masks
 
 
 def add_mask(frame: np.ndarray, file_name: str):
@@ -23,9 +24,10 @@ def add_mask(frame: np.ndarray, file_name: str):
     frame_data = data.get(file_name)
     if frame_data is not None:
         color = frame_data.get('color')
-        mask = np.array(frame_data.get('mask'))
-        if color is not None:
-            cv2.polylines(frame, [mask], isClosed=True, color=color, thickness=2)
+        masks = np.array(frame_data.get('mask'))
+        for mask in masks:
+            if color is not None:
+                cv2.polylines(frame, [mask], isClosed=True, color=color, thickness=2)
 
 
 def calculate_intersection_percent(rectangle_points, polygon_points):
@@ -136,6 +138,6 @@ def find_person(image: np.ndarray):
             (w, h) = (boxes[i][2], boxes[i][3])
             # draw a bounding box rectangle and label on the image
             color = [0, 255, 0]
-            result.append(((x, y), (x + w, y + h)))
+            result.append([(x, y), (x + w, y), (x + w, y + h), (x, y + h)])
             cv2.rectangle(image, (x, y), (x + w, y + h), color, 2)
     return result
