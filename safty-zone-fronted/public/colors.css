@@ -1,0 +1,27 @@
+:root {
+    --border-color: rgba(255, 255, 255, 0.2);
+    --border-color-hover: rgba(255, 255, 255, 0.5);
+    --color1: #F1F4F6;
+    --color2: #D3DAE1;
+    --color3: #B5C1CC;
+    --color4: #96A8B8;
+    --color5: #788FA3;
+    --color6: #5E758A;
+    --color7: #495C6C;
+    --light-grey: #35424D;
+    --mid-gray: #263039;
+    --grey: #20282F;
+    --color10: #20282F;
+    --color11: #0B0E11;
+    --color12: #DBE0FF;
+    --color13: #A8B5FF;
+    --color14: #758AFF;
+    --color15: #425EFF;
+    --color16: #0F33FF;
+    --color17: #0021DB;
+    --color18: #0019A8;
+    --color19: #0019A8;
+    --color20: #001275;
+    --color21: #000A42;
+    --color22: #00020F;
+}
