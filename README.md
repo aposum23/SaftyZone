@@ -13,7 +13,7 @@
   <li><a href="https://www.figma.com/file/KoZTOfDruYGqIn8plIB3XF/%D1%86%D0%B8%D1%84%D1%80%D0%BE%D0%B2%D0%BE%D0%B9-%D0%BF%D1%80%D0%BE%D1%80%D1%8B%D0%B2?node-id=0%3A1&mode=dev">Дизайн-проект приложения</a></li>
 </ul>
 
-# Работу выполнили
+# Над проектом работали
 <img width="100px" height="130px" src="https://sun9-8.userapi.com/impg/uVBJcYqJBL2PRGX4TpvMCzjAt8_IBQQD0UQQ9Q/smN67kVVTCQ.jpg?size=480x640&quality=95&sign=1943f5daa820d6f0beb0e1671c07dced&type=album"/>
 <h3><a href="https://t.me/MishaDuhno">Духно Михаил</a></h3>
 <h4>Juniuor frontend developer</h4>
