@@ -16,6 +16,7 @@ const { incidentData, generateAlarm, alarmSource } = storeToRefs(indicatorsStatu
 const showNotifBar = ref(false);
 const currentContent = ref('cards');
 const currentVideo = ref('');
+let counter = 0;
 
 const openMaskSettings = (fileName: string) => {
   currentVideo.value = fileName
@@ -36,9 +37,12 @@ onMounted(() => {
       if (value.incidentLevel === 1) {
         generateAlarm.value = true;
         showNotifBar.value = true;
-        currentVideo.value = value.file;
-        currentContent.value = 'incident';
+        // if (counter < 1) {
+          currentVideo.value = value.file;
+          currentContent.value = 'incident';
+        // }
         alarmSource.value = value.name;
+        counter++;
         break;
       }
     }
@@ -50,7 +54,7 @@ onMounted(() => {
 
 <template>
   <div class="content grid justify-content-center">
-  <NotificationBar v-if="generateAlarm && showNotifBar" :source-name="alarmSource" class="col-11 mt-1" @closeNotificationBar="showNotifBar = false"/>
+  <NotificationBar v-if="generateAlarm && showNotifBar" :source-name="alarmSource" class="notif-bar mt-1" @closeNotificationBar="showNotifBar = false"/>
     <template v-for="source in sources">
       <VideoCard :id="source.name" :sourceName="source.name" :fileName="source.file" :incidentLevel="source.incidentLevel" class="col-6 mx-5 my-3" @openMaskSettings="openMaskSettings(source.file)"/>
     </template>
@@ -89,5 +93,9 @@ onMounted(() => {
  .content::-webkit-scrollbar-thumb {
    background: var(--light-grey);
    border-radius: 10px;
+ }
+
+ .notif-bar {
+   width: 87%;
  }
 </style>
