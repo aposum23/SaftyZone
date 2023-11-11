@@ -10,3 +10,4 @@
 <h1>Работу выполнил</h1>
 <img width="100px" height="130px" src="https://sun9-8.userapi.com/impg/uVBJcYqJBL2PRGX4TpvMCzjAt8_IBQQD0UQQ9Q/smN67kVVTCQ.jpg?size=480x640&quality=95&sign=1943f5daa820d6f0beb0e1671c07dced&type=album"/>
 <a href="https://t.me/MishaDuhno"><h3>Духно Михаил</h3></a>
+<h4>Junior frontend developer</h4>
