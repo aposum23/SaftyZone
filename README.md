@@ -23,6 +23,3 @@
 <img width="221" height="130" src="https://pchel.net/files/users/ekaterina-svetikova-8960888864000/avatars/medium/5226061_foto.png"/>
 <h3><a href="https://t.me/esvetikova">Екатерина Светикова</a></h3>
 <h4>UI/UX Designer</h4>
-<img width="221" height="130" src=https://github.com/aposum23/SaftyZone/assets/81620056/5bd17d5a-f373-4937-9fa6-ace9e9b8c0f3"/>
-<h3><a href="https://t.me/ab2805">Алексей Брагин</a></h3>
-<h4>Инженер машинного зрения</h4>
