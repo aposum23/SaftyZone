@@ -9,7 +9,8 @@
 </ol>
 
 # Валидатор
-Для запуска валидатора необходимо в файле validator.py установить значение переменной camera_folder в путь к изображениям с камер и значение переменной danger_zone_folder в путь к изображению с разметкой. Запустить командой python validator.py
+Для запуска валидатора необходимо в файле ```validator.py``` установить значение переменной ```camera_folder``` в путь к изображениям с камер и значение переменной ```danger_zone_folder``` в путь к изображению с разметкой. 
+Запустить командой ```python validator.py```
 
 <h1>Над проектом работали</h1>
 <img width="221px" height="130px" src="https://sun9-1.userapi.com/impg/LjyKcKGSyoAosenfRMQZKy8f1K69j4b7Y7lK4Q/B4EIbB3OLM8.jpg?size=1280x960&quality=96&sign=d69216d7b8bf861ec147e10b802a56c7&type=album"/>
